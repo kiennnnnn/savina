@@ -1,0 +1,1432 @@
+[
+    {
+        "id": "56a3c2b9b472bafc",
+        "type": "tab",
+        "label": "SAVINA IOT",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "fcce7f7e973545d0",
+        "type": "modbus-read",
+        "z": "56a3c2b9b472bafc",
+        "name": "IGBT Temp",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "91",
+        "quantity": "1",
+        "rate": "5",
+        "rateUnit": "m",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "bb53ac8eb64c21a7",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 240,
+        "y": 600,
+        "wires": [
+            [
+                "ca26798e5f82b629"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "c392690a30202961",
+        "type": "ui_text",
+        "z": "56a3c2b9b472bafc",
+        "group": "af2b76e150dbdd59",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Temperature",
+        "label": "Temperature:",
+        "format": "{{msg.payload}} &deg;C",
+        "layout": "row-left",
+        "x": 770,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "dd7861fa5203489d",
+        "type": "ui_text",
+        "z": "56a3c2b9b472bafc",
+        "group": "831a8462d6a881e7",
+        "order": 1,
+        "width": 3,
+        "height": 1,
+        "name": "Power In",
+        "label": "Power In:",
+        "format": "{{msg.payload}} kWh",
+        "layout": "row-left",
+        "x": 640,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "315b6bde800ac4cd",
+        "type": "ui_text",
+        "z": "56a3c2b9b472bafc",
+        "group": "831a8462d6a881e7",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "name": "Power Load",
+        "label": "Power Load:",
+        "format": "{{msg.payload}} kWh",
+        "layout": "row-left",
+        "x": 650,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "7d5df592b2a3766b",
+        "type": "ui_text",
+        "z": "56a3c2b9b472bafc",
+        "group": "831a8462d6a881e7",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "name": "Ua",
+        "label": "Ua:",
+        "format": "{{msg.payload}} V",
+        "layout": "row-left",
+        "x": 670,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "96de367a09222bef",
+        "type": "ui_text",
+        "z": "56a3c2b9b472bafc",
+        "group": "831a8462d6a881e7",
+        "order": 6,
+        "width": 3,
+        "height": 1,
+        "name": "Ub",
+        "label": "Ub:",
+        "format": "{{msg.payload}} V",
+        "layout": "row-left",
+        "x": 670,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "3bed2e420ca9a251",
+        "type": "ui_text",
+        "z": "56a3c2b9b472bafc",
+        "group": "831a8462d6a881e7",
+        "order": 7,
+        "width": 3,
+        "height": 1,
+        "name": "Uc",
+        "label": "Uc:",
+        "format": "{{msg.payload}} V",
+        "layout": "row-left",
+        "x": 670,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "81e9eb5acf73e45a",
+        "type": "ui_text",
+        "z": "56a3c2b9b472bafc",
+        "group": "831a8462d6a881e7",
+        "order": 8,
+        "width": 3,
+        "height": 1,
+        "name": "Ia",
+        "label": "Ia:",
+        "format": "{{msg.payload}} A",
+        "layout": "row-left",
+        "x": 670,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "79b55b20bf96a04b",
+        "type": "ui_text",
+        "z": "56a3c2b9b472bafc",
+        "group": "831a8462d6a881e7",
+        "order": 9,
+        "width": 3,
+        "height": 1,
+        "name": "Ib",
+        "label": "Ib:",
+        "format": "{{msg.payload}} A",
+        "layout": "row-left",
+        "x": 670,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "1e8bc6796a44ee50",
+        "type": "ui_text",
+        "z": "56a3c2b9b472bafc",
+        "group": "831a8462d6a881e7",
+        "order": 10,
+        "width": 3,
+        "height": 1,
+        "name": "Ic",
+        "label": "Ic:",
+        "format": "{{msg.payload}} A",
+        "layout": "row-left",
+        "x": 670,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "1da21c71e306a5fa",
+        "type": "ui_text",
+        "z": "56a3c2b9b472bafc",
+        "group": "831a8462d6a881e7",
+        "order": 11,
+        "width": 3,
+        "height": 1,
+        "name": "f",
+        "label": "f:",
+        "format": "{{msg.payload}} Hz",
+        "layout": "row-left",
+        "x": 670,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "4b0a64a85b148649",
+        "type": "modbus-read",
+        "z": "56a3c2b9b472bafc",
+        "name": "Pin",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "108",
+        "quantity": "1",
+        "rate": "5",
+        "rateUnit": "m",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "bb53ac8eb64c21a7",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 310,
+        "y": 660,
+        "wires": [
+            [
+                "94a8926312021fc6"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "1757bb3a98e17192",
+        "type": "modbus-read",
+        "z": "56a3c2b9b472bafc",
+        "name": "P_load",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "200",
+        "quantity": "1",
+        "rate": "5",
+        "rateUnit": "m",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "bb53ac8eb64c21a7",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 310,
+        "y": 700,
+        "wires": [
+            [
+                "70dac966eeab2ab4"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "fdc2ddb131d4b24a",
+        "type": "modbus-read",
+        "z": "56a3c2b9b472bafc",
+        "name": "U,f",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "40001",
+        "quantity": "7",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "bb53ac8eb64c21a7",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 310,
+        "y": 860,
+        "wires": [
+            [
+                "5c4174e39bf8dd67"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "679933f036515af5",
+        "type": "ui_text",
+        "z": "56a3c2b9b472bafc",
+        "group": "831a8462d6a881e7",
+        "order": 12,
+        "width": 3,
+        "height": 1,
+        "name": "cosphi",
+        "label": "Cosphi:",
+        "format": "{{msg.payload}} ",
+        "layout": "row-left",
+        "x": 670,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "ef35c441ca88b2f4",
+        "type": "modbus-read",
+        "z": "56a3c2b9b472bafc",
+        "name": "Cosphi",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "93",
+        "quantity": "1",
+        "rate": "5",
+        "rateUnit": "m",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "bb53ac8eb64c21a7",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 330,
+        "y": 1320,
+        "wires": [
+            [
+                "679933f036515af5"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "d6b4a0f44077cd74",
+        "type": "ui_chart",
+        "z": "56a3c2b9b472bafc",
+        "name": " Grid Sell Power",
+        "group": "93fa8cbc8627b07e",
+        "order": 1,
+        "width": 6,
+        "height": 5,
+        "label": " Grid Sell Power",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "16",
+        "removeOlder": "2",
+        "removeOlderPoints": "200",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 660,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d8591cb873dba0a7",
+        "type": "ui_text",
+        "z": "56a3c2b9b472bafc",
+        "group": "420e8b74556266c8",
+        "order": 1,
+        "width": 3,
+        "height": 1,
+        "name": "Ubat",
+        "label": "Ubat:",
+        "format": "{{msg.payload}} V",
+        "layout": "row-left",
+        "x": 610,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "434718db8c65ba13",
+        "type": "modbus-read",
+        "z": "56a3c2b9b472bafc",
+        "name": "Ubat",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "",
+        "quantity": "1",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "ec2942f1b10ce1f7",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 290,
+        "y": 220,
+        "wires": [
+            [
+                "d8591cb873dba0a7",
+                "5c5be24e50c40d1e"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "6cdeeb7cb840846e",
+        "type": "ui_text",
+        "z": "56a3c2b9b472bafc",
+        "group": "420e8b74556266c8",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "name": "Ibat",
+        "label": "Ibat: ",
+        "format": "{{msg.payload}} A",
+        "layout": "row-left",
+        "x": 610,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "aa45ee05915031b2",
+        "type": "modbus-read",
+        "z": "56a3c2b9b472bafc",
+        "name": "Ibat",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "",
+        "quantity": "",
+        "rate": "5",
+        "rateUnit": "m",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "ec2942f1b10ce1f7",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 290,
+        "y": 280,
+        "wires": [
+            [
+                "6cdeeb7cb840846e"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "16c887b5d87b167d",
+        "type": "ui_text",
+        "z": "56a3c2b9b472bafc",
+        "group": "420e8b74556266c8",
+        "order": 4,
+        "width": 3,
+        "height": 1,
+        "name": "SOC",
+        "label": "SOC: ",
+        "format": "{{msg.payload}} AH",
+        "layout": "row-left",
+        "x": 570,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "6bddf73c62d11ae8",
+        "type": "modbus-read",
+        "z": "56a3c2b9b472bafc",
+        "name": "SOC",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "107",
+        "quantity": "1",
+        "rate": "5",
+        "rateUnit": "m",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "bb53ac8eb64c21a7",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 290,
+        "y": 320,
+        "wires": [
+            [
+                "16c887b5d87b167d"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "5c5be24e50c40d1e",
+        "type": "debug",
+        "z": "56a3c2b9b472bafc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "11ee0352245d5830",
+        "type": "debug",
+        "z": "56a3c2b9b472bafc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "ca26798e5f82b629",
+        "type": "calculator",
+        "z": "56a3c2b9b472bafc",
+        "name": "",
+        "inputMsgField": "payload",
+        "outputMsgField": "payload",
+        "operation": "sub",
+        "constant": "1000",
+        "round": false,
+        "decimals": 0,
+        "x": 400,
+        "y": 600,
+        "wires": [
+            [
+                "2a9aec3d0b4e29f9"
+            ]
+        ]
+    },
+    {
+        "id": "2a9aec3d0b4e29f9",
+        "type": "calculator",
+        "z": "56a3c2b9b472bafc",
+        "name": "",
+        "inputMsgField": "payload",
+        "outputMsgField": "payload",
+        "operation": "mult",
+        "constant": "0.1",
+        "round": false,
+        "decimals": 0,
+        "x": 560,
+        "y": 600,
+        "wires": [
+            [
+                "c392690a30202961",
+                "11ee0352245d5830"
+            ]
+        ]
+    },
+    {
+        "id": "f7031f31131f3c50",
+        "type": "calculator",
+        "z": "56a3c2b9b472bafc",
+        "name": "Ua",
+        "inputMsgField": "payload",
+        "outputMsgField": "payload",
+        "operation": "mult",
+        "constant": "0.1",
+        "round": false,
+        "decimals": 0,
+        "x": 510,
+        "y": 1000,
+        "wires": [
+            [
+                "7d5df592b2a3766b"
+            ]
+        ]
+    },
+    {
+        "id": "0063a2f48d8bc566",
+        "type": "calculator",
+        "z": "56a3c2b9b472bafc",
+        "name": "Ub",
+        "inputMsgField": "payload",
+        "outputMsgField": "payload",
+        "operation": "mult",
+        "constant": "0.1",
+        "round": false,
+        "decimals": 0,
+        "x": 510,
+        "y": 1040,
+        "wires": [
+            [
+                "96de367a09222bef"
+            ]
+        ]
+    },
+    {
+        "id": "94107daf62d1d3a1",
+        "type": "calculator",
+        "z": "56a3c2b9b472bafc",
+        "name": "Uc",
+        "inputMsgField": "payload",
+        "outputMsgField": "payload",
+        "operation": "mult",
+        "constant": "0.1",
+        "round": false,
+        "decimals": 0,
+        "x": 510,
+        "y": 1080,
+        "wires": [
+            [
+                "3bed2e420ca9a251"
+            ]
+        ]
+    },
+    {
+        "id": "3f21840e4ad3410a",
+        "type": "calculator",
+        "z": "56a3c2b9b472bafc",
+        "name": "Ia",
+        "inputMsgField": "payload",
+        "outputMsgField": "payload",
+        "operation": "mult",
+        "constant": "0.1",
+        "round": false,
+        "decimals": 0,
+        "x": 510,
+        "y": 1120,
+        "wires": [
+            [
+                "81e9eb5acf73e45a"
+            ]
+        ]
+    },
+    {
+        "id": "61425d9a752f40ec",
+        "type": "calculator",
+        "z": "56a3c2b9b472bafc",
+        "name": "Ib",
+        "inputMsgField": "payload",
+        "outputMsgField": "payload",
+        "operation": "mult",
+        "constant": "0.1",
+        "round": false,
+        "decimals": 0,
+        "x": 510,
+        "y": 1160,
+        "wires": [
+            [
+                "79b55b20bf96a04b"
+            ]
+        ]
+    },
+    {
+        "id": "5f358e3eac5e72d9",
+        "type": "calculator",
+        "z": "56a3c2b9b472bafc",
+        "name": "Ic",
+        "inputMsgField": "payload",
+        "outputMsgField": "payload",
+        "operation": "mult",
+        "constant": "0.1",
+        "round": false,
+        "decimals": 0,
+        "x": 510,
+        "y": 1200,
+        "wires": [
+            [
+                "1e8bc6796a44ee50"
+            ]
+        ]
+    },
+    {
+        "id": "2831ea9eedee50df",
+        "type": "calculator",
+        "z": "56a3c2b9b472bafc",
+        "name": "f",
+        "inputMsgField": "payload",
+        "outputMsgField": "payload",
+        "operation": "mult",
+        "constant": "0.01",
+        "round": false,
+        "decimals": 0,
+        "x": 510,
+        "y": 1240,
+        "wires": [
+            [
+                "1da21c71e306a5fa"
+            ]
+        ]
+    },
+    {
+        "id": "94a8926312021fc6",
+        "type": "calculator",
+        "z": "56a3c2b9b472bafc",
+        "name": "Pin",
+        "inputMsgField": "payload",
+        "outputMsgField": "payload",
+        "operation": "mult",
+        "constant": "0.1",
+        "round": false,
+        "decimals": 0,
+        "x": 470,
+        "y": 660,
+        "wires": [
+            [
+                "dd7861fa5203489d"
+            ]
+        ]
+    },
+    {
+        "id": "70dac966eeab2ab4",
+        "type": "calculator",
+        "z": "56a3c2b9b472bafc",
+        "name": "Pload",
+        "inputMsgField": "payload",
+        "outputMsgField": "payload",
+        "operation": "mult",
+        "constant": "0.01",
+        "round": false,
+        "decimals": 0,
+        "x": 470,
+        "y": 700,
+        "wires": [
+            [
+                "315b6bde800ac4cd"
+            ]
+        ]
+    },
+    {
+        "id": "f679c203e8bd1062",
+        "type": "ui_text",
+        "z": "56a3c2b9b472bafc",
+        "group": "831a8462d6a881e7",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "name": "Power Grid_sel",
+        "label": "Power Grid_sell:",
+        "format": "{{msg.payload}} kWh",
+        "layout": "row-left",
+        "x": 660,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "531f05f7e656d6f7",
+        "type": "modbus-read",
+        "z": "56a3c2b9b472bafc",
+        "name": "Pgrid_sell",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "205",
+        "quantity": "1",
+        "rate": "5",
+        "rateUnit": "m",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "bb53ac8eb64c21a7",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 320,
+        "y": 740,
+        "wires": [
+            [
+                "b44e8d2839faff58"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b44e8d2839faff58",
+        "type": "calculator",
+        "z": "56a3c2b9b472bafc",
+        "name": "Pgrid_sell",
+        "inputMsgField": "payload",
+        "outputMsgField": "payload",
+        "operation": "mult",
+        "constant": "0.01",
+        "round": false,
+        "decimals": 0,
+        "x": 480,
+        "y": 740,
+        "wires": [
+            [
+                "f679c203e8bd1062",
+                "d6b4a0f44077cd74"
+            ]
+        ]
+    },
+    {
+        "id": "a7aaae0fc9196e77",
+        "type": "ui_text",
+        "z": "56a3c2b9b472bafc",
+        "group": "831a8462d6a881e7",
+        "order": 4,
+        "width": 3,
+        "height": 1,
+        "name": "Power Grid_buy",
+        "label": "Power Grid_buy:",
+        "format": "{{msg.payload}} kWh",
+        "layout": "row-left",
+        "x": 660,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "7d2e10e0b79477b8",
+        "type": "modbus-read",
+        "z": "56a3c2b9b472bafc",
+        "name": "Pgrid_buy",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "208",
+        "quantity": "1",
+        "rate": "5",
+        "rateUnit": "m",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "bb53ac8eb64c21a7",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 320,
+        "y": 780,
+        "wires": [
+            [
+                "2d533b1aa3a1bbb3"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "2d533b1aa3a1bbb3",
+        "type": "calculator",
+        "z": "56a3c2b9b472bafc",
+        "name": "Pgrid_buy",
+        "inputMsgField": "payload",
+        "outputMsgField": "payload",
+        "operation": "mult",
+        "constant": "0.01",
+        "round": false,
+        "decimals": 0,
+        "x": 480,
+        "y": 780,
+        "wires": [
+            [
+                "a7aaae0fc9196e77"
+            ]
+        ]
+    },
+    {
+        "id": "3937cbf31fb4490e",
+        "type": "change",
+        "z": "56a3c2b9b472bafc",
+        "name": "extract Ua",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[0]",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 330,
+        "y": 1000,
+        "wires": [
+            [
+                "f7031f31131f3c50"
+            ]
+        ]
+    },
+    {
+        "id": "9187076da155625d",
+        "type": "change",
+        "z": "56a3c2b9b472bafc",
+        "name": "extract Ub",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[1]",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 330,
+        "y": 1040,
+        "wires": [
+            [
+                "0063a2f48d8bc566"
+            ]
+        ]
+    },
+    {
+        "id": "0edd14e4191f195d",
+        "type": "change",
+        "z": "56a3c2b9b472bafc",
+        "name": "extract Uc",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[2]",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 1080,
+        "wires": [
+            [
+                "94107daf62d1d3a1"
+            ]
+        ]
+    },
+    {
+        "id": "5076e8c3dfda7f6a",
+        "type": "change",
+        "z": "56a3c2b9b472bafc",
+        "name": "extract Ia",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[3]",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 1120,
+        "wires": [
+            [
+                "3f21840e4ad3410a"
+            ]
+        ]
+    },
+    {
+        "id": "cfc22b2e2bbd042e",
+        "type": "change",
+        "z": "56a3c2b9b472bafc",
+        "name": "extract Ib",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[4]",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 1160,
+        "wires": [
+            [
+                "61425d9a752f40ec"
+            ]
+        ]
+    },
+    {
+        "id": "612ae773d2ac31b3",
+        "type": "change",
+        "z": "56a3c2b9b472bafc",
+        "name": "extract Ic",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[5]",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 1200,
+        "wires": [
+            [
+                "5f358e3eac5e72d9"
+            ]
+        ]
+    },
+    {
+        "id": "6c592014aaa6d894",
+        "type": "change",
+        "z": "56a3c2b9b472bafc",
+        "name": "extract f",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload[6]",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 1240,
+        "wires": [
+            [
+                "2831ea9eedee50df"
+            ]
+        ]
+    },
+    {
+        "id": "5c4174e39bf8dd67",
+        "type": "link out",
+        "z": "56a3c2b9b472bafc",
+        "name": "",
+        "links": [
+            "d968755e34dce3b6"
+        ],
+        "x": 535,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "d968755e34dce3b6",
+        "type": "link in",
+        "z": "56a3c2b9b472bafc",
+        "name": "",
+        "links": [
+            "5c4174e39bf8dd67"
+        ],
+        "x": 185,
+        "y": 920,
+        "wires": [
+            [
+                "3937cbf31fb4490e",
+                "9187076da155625d",
+                "0edd14e4191f195d",
+                "5076e8c3dfda7f6a",
+                "cfc22b2e2bbd042e",
+                "612ae773d2ac31b3",
+                "6c592014aaa6d894"
+            ]
+        ]
+    },
+    {
+        "id": "b1403b907ec777dc",
+        "type": "modbus-read",
+        "z": "56a3c2b9b472bafc",
+        "name": "Run status",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "59",
+        "quantity": "1",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "bb53ac8eb64c21a7",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 280,
+        "y": 380,
+        "wires": [
+            [
+                "615d3c74966272b3"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "615d3c74966272b3",
+        "type": "function",
+        "z": "56a3c2b9b472bafc",
+        "name": "",
+        "func": "var a=msg.payload;\nif(a==0)\n{\n   return {payload:\"Standby\"};\n}\nelse if(a==1)\n{\n    return {payload:\"SelfCheck\"};\n}\nelse if(a==2)\n{\n    return {payload:\"Normal\"};\n}\nelse if(a==3)\n{\n    return {payload:\"Warning\"};\n}\nelse if(a==4)\n{\n    return {payload:\"Fault\"};\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 380,
+        "wires": [
+            [
+                "ff51952901781862",
+                "540329261f943e56"
+            ]
+        ]
+    },
+    {
+        "id": "ff51952901781862",
+        "type": "ui_text",
+        "z": "56a3c2b9b472bafc",
+        "group": "72d04390adc6ee7f",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Run Status",
+        "label": "Run Status:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 670,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "540329261f943e56",
+        "type": "debug",
+        "z": "56a3c2b9b472bafc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "b8355f39ba7a2b51",
+        "type": "modbus-read",
+        "z": "56a3c2b9b472bafc",
+        "name": "Fault",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "unitid": "",
+        "dataType": "HoldingRegister",
+        "adr": "103",
+        "quantity": "1",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "server": "bb53ac8eb64c21a7",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 270,
+        "y": 480,
+        "wires": [
+            [
+                "e3d69e191bc338c4"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "e3d69e191bc338c4",
+        "type": "function",
+        "z": "56a3c2b9b472bafc",
+        "name": "",
+        "func": "var a=msg.payload;\nif(a==3859)\n{\n   return {payload:\"[F13-Working mode change]\"};\n}\nelse if(a==3864)\n{\n    return {payload:\"[F18-AC over current fault of the hardware]\"};\n}\nelse if(a==3872)\n{\n    return {payload:\"[F20-DC over current fault of the hardware]\"};\n}\nelse if(a==3875)\n{\n    return {payload:\"[F23-AC leakage current is transient over current]\"};\n}\nelse if(a==3876)\n{\n    return {payload:\"[F24-DC insulation impedance failure]\"};\n}\nelse if(a==3878)\n{\n    return {payload:\"[F26-The DC busbar is unbalanced]\"};\n}\nelse if(a==3893)\n{\n    return {payload:\"[F35-No AC grid]\"};\n}\nelse if(a==3906)\n{\n    return {payload:\"[F42-AC line low voltage]\"};\n}\nelse if(a==3911)\n{\n    return {payload:\"[F47-AC over frequency]\"};\n}\nelse if(a==3912)\n{\n    return {payload:\"[F48-AC over frequency]\"};\n}\nelse if(a==3926)\n{\n    return {payload:\"[F56-DC busbar voltage is too low]\"};\n}\nelse if(a==3939)\n{\n    return {payload:\"[F63-ARC fault]\"};\n}\nelse if(a==3940)\n{\n    return {payload:\"[F64-Heat sink high temperature failure]\"};\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 480,
+        "wires": [
+            [
+                "9eb0fbc774c3de47",
+                "13312410a9b24834"
+            ]
+        ]
+    },
+    {
+        "id": "9eb0fbc774c3de47",
+        "type": "ui_text",
+        "z": "56a3c2b9b472bafc",
+        "group": "72d04390adc6ee7f",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Faut Function code",
+        "label": "Fault:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 690,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "13312410a9b24834",
+        "type": "debug",
+        "z": "56a3c2b9b472bafc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "21b95aef08b91a7f",
+        "type": "ui_text_input",
+        "z": "56a3c2b9b472bafc",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "af2b76e150dbdd59",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "time",
+        "delay": 300,
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 140,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "75af1c7888ec9151",
+        "type": "ui_spacer",
+        "z": "56a3c2b9b472bafc",
+        "name": "spacer",
+        "group": "420e8b74556266c8",
+        "order": 2,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "bb53ac8eb64c21a7",
+        "type": "modbus-client",
+        "name": "",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "tcpHost": "192.168.88.18",
+        "tcpPort": "1883",
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": "9600",
+        "serialDatabits": "8",
+        "serialStopbits": "1",
+        "serialParity": "none",
+        "serialConnectionDelay": "100",
+        "unit_id": "1",
+        "commandDelay": "1",
+        "clientTimeout": "1000",
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": "2000",
+        "parallelUnitIdsAllowed": true
+    },
+    {
+        "id": "af2b76e150dbdd59",
+        "type": "ui_group",
+        "name": "Temperature",
+        "tab": "273fd6b90ffec713",
+        "order": 3,
+        "disp": true,
+        "width": 3,
+        "collapse": false
+    },
+    {
+        "id": "831a8462d6a881e7",
+        "type": "ui_group",
+        "name": "Inverter Parameter",
+        "tab": "273fd6b90ffec713",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "93fa8cbc8627b07e",
+        "type": "ui_group",
+        "name": "Chart",
+        "tab": "273fd6b90ffec713",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "420e8b74556266c8",
+        "type": "ui_group",
+        "name": "Battery",
+        "tab": "273fd6b90ffec713",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false
+    },
+    {
+        "id": "ec2942f1b10ce1f7",
+        "type": "modbus-client",
+        "name": "",
+        "clienttype": "tcp",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "tcpHost": "192.168.43.110",
+        "tcpPort": "1883",
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyUSB",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": "9600",
+        "serialDatabits": "8",
+        "serialStopbits": "1",
+        "serialParity": "none",
+        "serialConnectionDelay": "100",
+        "unit_id": "1",
+        "commandDelay": "1",
+        "clientTimeout": "1000",
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": "2000",
+        "parallelUnitIdsAllowed": true
+    },
+    {
+        "id": "72d04390adc6ee7f",
+        "type": "ui_group",
+        "name": "Inverter Status",
+        "tab": "273fd6b90ffec713",
+        "order": 1,
+        "disp": true,
+        "width": "9",
+        "collapse": false
+    },
+    {
+        "id": "273fd6b90ffec713",
+        "type": "ui_tab",
+        "name": "SAVINA IOT ",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    }
+]
